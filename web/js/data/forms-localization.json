@@ -1,0 +1,7 @@
+{
+  "login": {
+    "ru": {"username": "Имя пользователя", "password": "Пароль"},
+    "fr": {"username": "Nom d'utilisateur", "password": "Mot de passe"},
+    "en": {"username": "Username", "password": "Password"}
+  }
+}

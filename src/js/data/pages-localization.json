@@ -1,0 +1,16 @@
+{
+  "about": {
+    "ru": {
+      "title": "О приложении",
+      "text": "Чтобы поменять содержимое этой секции..."
+    },
+    "fr": {
+      "title": "À Propos De La Zone De Contenu",
+      "text": "Pour modifier le contenu de cette section, vous apprendrez à faire des modifications à la about.html fichier situé dans le dossier /js/dossier vues"
+    },
+    "en": {
+      "title": "About Content Area",
+      "text": "To change the content of this section, you will make edits to the about.html file located in the /js/views folder."
+    }
+  }
+}

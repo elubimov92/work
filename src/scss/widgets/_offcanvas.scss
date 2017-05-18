@@ -1,0 +1,19 @@
+.oj-offcanvas-top {
+  border-radius: $mediumBorderRadius;
+}
+
+.oj-web-applayout-content {
+
+  .oj-panel {
+
+    .oj-offcanvas-outer-wrapper {
+      overflow: visible;
+    }
+  }
+}
+
+.oj-offcanvas-outer-wrapper {
+  &.oj-offcanvas-page {
+    overflow-y: hidden;
+  }
+}

@@ -1,0 +1,32 @@
+// File that redefines JET variables
+@import "variables";
+
+// JET alta styles
+//----------------------------------
+@import "../../bower_components/oraclejet/dist/scss/alta/oj.alta.variables";
+@import "../../bower_components/oraclejet/dist/scss/3rdparty/normalize/normalize";
+@import "../../bower_components/oraclejet/dist/scss/alta/oj.alta.widgets";
+
+// Partial override files
+//----------------------------------
+// - Modules
+@import "modules/calendar";
+@import "modules/sidePanel";
+// - Widgets
+@import "widgets/accordion";
+@import "widgets/applayout";
+@import "widgets/button";
+@import "widgets/collapsible";
+@import "widgets/formcontrol.listbox";
+@import "widgets/formcontrol.select";
+@import "widgets/navigationlist";
+@import "widgets/offcanvas";
+@import "widgets/panel";
+@import "widgets/tabs";
+// - Custom
+@import "dropdowns";
+@import "forms";
+@import "header";
+@import "icons";
+@import "label";
+@import "pages";

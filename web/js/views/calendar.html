@@ -1,0 +1,44 @@
+<div class="oj-flex oj-flex-items-pad">
+  <div class="oj-sm-12 oj-xl-6 oj-flex-item">
+    <div style="display:none" id="calendarPopup"
+         data-bind="ojComponent:{component: 'ojPopup'}">
+      <div data-bind="ojModule: {name: 'calendarPopup', params: calendarPopupModuleParams}"></div>
+    </div>
+    <div id="calendar">
+      <div id="tabs" data-bind="ojComponent:{component: 'ojTabs'}">
+
+        <!--Period toggle-->
+        <ul>
+          <!-- ko foreach: periods -->
+          <li data-bind="click: function() { $parent.info.type($data); $parent.popup.close(); }">
+            <span data-bind="text: $data"></span>
+          </li>
+          <!-- /ko -->
+        </ul>
+
+        <!--Tab contents-->
+        <div id="tabs-1">
+
+          <div data-bind="ojModule: {name: 'calendarTabContent', params: calendarTabContentModuleParams}"></div>
+
+        </div>
+        <div id="tabs-2">
+
+          <div data-bind="ojModule: {name: 'calendarTabContent', params: calendarTabContentModuleParams}"></div>
+
+        </div>
+        <div id="tabs-3">
+
+          <div data-bind="ojModule: {name: 'calendarTabContent', params: calendarTabContentModuleParams}"></div>
+
+        </div>
+        <div id="tabs-4">
+
+          <div data-bind="ojModule: {name: 'calendarTabContent', params: calendarTabContentModuleParams}"></div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

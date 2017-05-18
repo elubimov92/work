@@ -1,0 +1,85 @@
+.form-container {
+  form {
+    background-color: #fff;
+  }
+}
+
+.oj-inputtext-input, .oj-inputpassword {
+  color: $inputTextColor;
+  background-color: $inputBgColor;
+}
+
+#login-form {
+  position: relative;
+  width: 100%;
+  margin: 100px auto;
+  padding: 30px 0;
+  text-align: center;
+
+  .logo-container {
+    float: none;
+    margin-bottom: 68px;
+  }
+}
+
+#login-form .oj-flex-item {
+  margin: 20px 0;
+}
+
+#login-form input {
+  text-align: center;
+}
+
+#login-form #password {
+  background-color: $inputBgColor;
+}
+
+#login-form button {
+  text-transform: capitalize;
+}
+
+#login-form button.btn-select-lang {
+  display: flex;
+  color: $buttonBgColor;
+  background-color: $buttonTextColor;
+  box-shadow: none;
+  border-color: $buttonTextColor;
+}
+
+#login-form button.btn-select-lang:hover {
+  border-color: $buttonBorderColorHover;
+}
+
+#login-form button.btn-select-lang.active {
+  color: $buttonTextColor;
+  background-color: $buttonBgColor;
+  border-color: $buttonBgColor;
+}
+
+#login-form #login {
+  width: 252px;
+  margin: 5px 0;
+  box-shadow: $buttonBoxShadow;
+}
+
+#login-form #login.oj-disabled {
+  box-shadow: none;
+}
+
+@media all and (max-width: 767px) {
+
+  #login-form .btn-container.btn-dropdown {
+    top: -($circleButtonDiameter + 16);
+    right: 7px;
+  }
+
+}
+
+@media all and (min-width: 640px) {
+
+  #login-form {
+    width: 300px;
+    padding: 30px;
+  }
+
+}

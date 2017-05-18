@@ -1,0 +1,13 @@
+.oj-tabs-horizontal {
+  >.oj-tabs-nav-root {
+    .oj-tabs-tab {
+      span {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.oj-tabs-panel {
+  @include oj-border-radius($mediumBorderRadius);
+}

@@ -1,0 +1,12 @@
+.oj-web-applayout-content {
+  padding: $appLayoutHybridPadding;
+}
+
+// Removing padding for small screens
+@media all and (max-width: 600px) {
+
+  .oj-hybrid-padding {
+    padding: 0;
+  }
+
+}

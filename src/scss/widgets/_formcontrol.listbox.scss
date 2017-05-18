@@ -1,0 +1,21 @@
+// Hiding scroll
+.oj-listbox-drop {
+  overflow-x: hidden;
+  border-radius: 4px;
+  background-color: $listboxBgColor;
+}
+
+.oj-listbox-drop {
+  .oj-listbox-search-wrapper {
+    background-color: $listboxBgColor;
+  }
+}
+
+.oj-listbox-results {
+  width: 108%;
+}
+
+.oj-listbox-result-label {
+  color: $listboxItemLabelColorDefault;
+  line-height: $formControlInputHeight;
+}

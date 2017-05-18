@@ -1,0 +1,227 @@
+.dropdown {
+  -webkit-transition: all $dropdownAnimationDuration;
+  -moz-transition: all $dropdownAnimationDuration;
+  -ms-transition: all $dropdownAnimationDuration;
+  -o-transition: all $dropdownAnimationDuration;
+  transition: all $dropdownAnimationDuration;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  border: solid $dropdownBorderColor 2px;
+  border-radius: 4px;
+  font-size: $dropdownFontSizeFirst;
+  color: $dropdownTextColor;
+  background-color: $dropdownBgColor;
+  z-index: 2000;
+
+  &.toggled {
+    opacity: 1;
+    visibility: visible;
+  }
+  .email-container {
+    text-align: center;
+  }
+}
+
+.dropdown-select-app {
+  top: 60px;
+  right: 69px;
+  width: $dropdownSelectAppWidth;
+  height: $dropdownSelectAppHeight;
+
+  &.toggled {
+    top: 80px;
+  }
+}
+
+.dropdown-user-info {
+  top: 80px;
+  right: 0;
+  width: $dropdownUserInfoWidth;
+  height: $dropdownUserInfoHeight;
+
+  &.toggled {
+    top: 100px;
+  }
+}
+
+.dropdown__app-group {
+  padding: 35px 14px 18px 14px;
+  list-style: none;
+
+  li {
+    display: block;
+    float: left;
+    width: 103px;
+    height: 79px;
+    padding: 10px 7px;
+
+    div {
+
+      &.img-container {
+        width: 55px;
+        height: 55px;
+        margin: auto;
+      }
+    }
+  }
+}
+
+.dropdown__top {
+  width: 100%;
+  height: 165px;
+  padding: 36px;
+  box-sizing: border-box;
+}
+
+.avatar-container {
+  float: left;
+  width: $circleButtonDiameter;
+  padding-right: 21px;
+}
+
+.avatar-container {
+  a {
+    text-decoration: none;
+  }
+}
+
+.name-container {
+  float: left;
+}
+
+.dropdown__name {
+  .row-first {
+  }
+  .row-second {
+     font-size: $dropdownFontSizeSecond;
+     text-transform: uppercase;
+  }
+}
+
+.dropdown__after-name {
+  clear: both;
+}
+
+button {
+  .dropdown__email {
+    margin-top: 8px;
+    border-radius: 17px;
+    color: rgba(25, 41, 51, 1) !important;
+    border-color: #eaeaea !important;
+  }
+}
+
+.avatar-placeholder {
+  width: $circleAvatarImageDiameter;
+  height: $circleAvatarImageDiameter;
+  color: #fff;
+  background-color: $buttonBgColor;
+  font-size: $avatarPlaceholderFontSize;
+  line-height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.dropdown__tabs {
+  width: 100%;
+  padding: 0;
+  list-style: none;
+
+  &.oj-tabs-horizontal {
+
+    >.oj-tabs-nav-root {
+
+      .oj-tabs-tab {
+        text-align: center;
+        border-top-width: 0;
+        border-bottom-style: solid;
+        border-bottom-width: 3px;
+        cursor: pointer;
+      }
+      .oj-tabs-tab-content {
+        height: inherit;
+      }
+    }
+    &.oj-tabs-bottom {
+
+      >.oj-tabs-nav-root {
+
+        .oj-tabs-tab-content {
+          height: inherit;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 767px) {
+
+  .dropdown {
+    width: 100%;
+    border-radius: 0;
+
+    .email-container {
+      width: 100%;
+    }
+  }
+
+  .dropdown-user-info {
+    top: $dropdownUserInfoResponsiveTopOffset - 20;
+    border-width: 3px 0 0 0;
+
+    &.toggled {
+      top: $dropdownUserInfoResponsiveTopOffset;
+    }
+  }
+
+  .dropdown-select-app {
+    min-height: $dropdownSelectAppHeight * 2;
+    top: $dropdownUserInfoResponsiveTopOffset + $dropdownUserInfoHeight - 20;
+    right: 0;
+    bottom: 20px;
+    border-width: 0 0 3px 0;
+
+    &.toggled {
+      top: $dropdownUserInfoResponsiveTopOffset + $dropdownUserInfoHeight;
+    }
+  }
+
+}
+
+@media all and (min-width: 768px) {
+
+  .dropdown__tabs {
+
+    &.oj-tabs-horizontal {
+
+      >.oj-tabs-nav-root {
+
+        .oj-tabs-tab {
+          float: left;
+          display: block;
+          width: $dropdownUserInfoWidth / 2;
+          height: $dropdownTabHeight - 3px;
+
+          &.oj-selected {
+            &:first-child, &:last-child {
+              .oj-tabs-tab-content {
+                border-left-color: $dropdownBgColor;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (min-width: 640px) {
+
+  .dropdown__email {
+    width: 395px;
+  }
+
+}

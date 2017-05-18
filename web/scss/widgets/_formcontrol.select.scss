@@ -1,0 +1,18 @@
+.oj-listbox-dropdown-open {
+
+  .oj-select-choice {
+    color: $buttonTextColor;
+    background-color: $buttonBgColor;
+
+    a {
+
+      &.oj-clickable-icon-nocontext {
+        color: $buttonTextColor;
+
+        &:hover {
+          color: $buttonTextColor;
+        }
+      }
+    }
+  }
+}

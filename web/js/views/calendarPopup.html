@@ -1,0 +1,46 @@
+<div data-bind="visible: state.type() !== 'year'" class="oj-flex oj-flex-items-pad calendar-header">
+  <div class='oj-xl-3 oj-flex-item prev-btn-box'>
+    <button data-bind="ojComponent: {
+                    component: 'ojButton',
+                    display: 'icons',
+                    icons: {start:'oj-fwk-icon oj-fwk-icon-caret-w'}
+                },
+                click: function() { prev(); }">
+    </button>
+  </div>
+
+  <div class='oj-xl-6 oj-flex-item'>
+    <div class='month' data-bind="text: state.month, visible: isDayOrWeekCalendar()"></div>
+    <div class='year' data-bind="text: state.year"></div>
+  </div>
+
+  <div class='oj-xl-3 oj-flex-item next-btn-box'>
+    <button data-bind="ojComponent: {
+                    component: 'ojButton',
+                    display: 'icons',
+                    icons: {start:'oj-fwk-icon oj-fwk-icon-caret-e'}
+                },
+                click: function() { next(); }">
+    </button>
+  </div>
+</div>
+<div class="oj-hybrid-padding">
+  <!-- Days table - day and week -->
+  <div data-bind="visible: isDayOrWeekCalendar()" class="table table-days">
+    <!-- ko foreach: daysInMonth -->
+    <div data-bind="css: $parent.selectStyle($data, $index), text: day, click: function() { $parent.selection.change($data); }"></div>
+    <!-- /ko -->
+  </div>
+  <!-- Months table - month -->
+  <div data-bind="visible: state.type() === 'month'" class="table table-months">
+    <!-- ko foreach: monthInYear -->
+    <div data-bind="css: $parent.selectStyle($data, $index), text: month, click: function() { $parent.selection.change($data); }"></div>
+    <!-- /ko -->
+  </div>
+  <!-- Years table - year -->
+  <div data-bind="visible: state.type() === 'year'" class="table table-years">
+    <!-- ko foreach: yearsInPeriod -->
+    <div data-bind="css: $parent.selectStyle($data, $index), text: year, click: function() { $parent.selection.change($data); }"></div>
+    <!-- /ko -->
+  </div>
+</div>

@@ -1,0 +1,11 @@
+.idea
+
+hybrid/platforms
+hybrid/www/*
+
+!hybrid/plugins
+hybrid/plugins/*
+!hybrid/plugins/fetch.json
+
+bower_components/
+node_modules/

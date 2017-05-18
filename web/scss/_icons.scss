@@ -1,0 +1,22 @@
+
+.oj-button {
+  .icon-settings {
+    width: 2rem;
+    height: 3rem;
+
+    &:before {
+      margin-top: 0.8rem;
+      content: url($iconSettingsPath);
+      max-width: 2rem;
+      max-height: 2rem;
+    }
+  }
+
+  &.oj-hover {
+    .icon-settings {
+      &:before {
+        content: url($iconSettingsHoverPath);
+      }
+    }
+  }
+}

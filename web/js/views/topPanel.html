@@ -1,0 +1,25 @@
+<div class="oj-flex oj-flex-items-pad oj-sm-flex-items-1 oj-sm-flex-items-initial oj-sm-align-items-flex-end">
+  <!-- ko foreach: { data: dataParent.filters, as: 'item' } -->
+  <div class="oj-margin oj-flex-item">
+    <label data-bind="attr: {for: item.name}, text: item.name"></label>
+    <select data-bind="attr: {id: item.name}, ojComponent: {component: 'ojSelect',
+     options: item.data}">
+      <!-- ko foreach: data -->
+      <option data-bind="value: id, text: name"></option>
+      <!-- /ko -->
+    </select>
+  </div>
+  <!-- /ko -->
+
+  <!--<div class="oj-sm-12 oj-md-6 oj-lg-4 oj-xl-3 oj-flex-item">
+    <label for="date"></label>
+    <input id="date" data-bind="ojComponent: {component: 'ojInputDate'}"/>
+  </div>-->
+  <div class="oj-margin oj-flex-item oj-flex oj-sm-justify-content-center">
+    <button class="oj-button-xl" data-bind="click: function() { dataParent.toggleDrawer(); }, ojComponent:
+          {component: 'ojButton', label: 'Применить'}"></button>
+  </div>
+</div>
+<button class="oj-panel-remove-button" data-bind="click: function() { dataParent.toggleDrawer(); },
+  ojComponent: { component:'ojButton', chroming: 'half', display: 'icons', icons: {start: 'oj-panel-remove-icon'}}">
+</button>

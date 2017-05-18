@@ -1,0 +1,71 @@
+<div class="oj-hybrid-padding">
+  <div class="oj-panel">
+    <div class="oj-offcanvas-outer-wrapper">
+      <!--Top panel module-->
+      <div id="topPanel" class="oj-offcanvas-top oj-panel oj-panel-alt"
+           data-bind="ojModule: { name: 'topPanel', params: topPanelModuleParams }" style="min-height: 100px"></div>
+      <div id="report-container">
+        <div class="oj-hybrid-padding">
+          <!--Button and title-->
+          <div class="oj-hybrid-padding">
+            <div class="oj-flex oj-flex-items-pad">
+              <div class="oj-sm-12 oj-flex-item">
+                <div class="oj-hybrid-padding">
+                  <div class="oj-flex oj-sm-flex-wrap-nowrap">
+                    <div class="oj-flex-item">
+                      <div class="oj-hybrid-padding">
+                        <button class="oj-margin oj-button-xl button-icon" data-bind="
+                            click: function() { toggleDrawer(); },
+                            ojComponent: {
+                              component:'ojButton'
+                         }">
+                          <div class="oj-icon icon-settings" role="img" title="Parameters">
+                          </div>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="oj-flex-item">
+                      <div class="oj-hybrid-padding">
+                        <div class="oj-margin">Список таблиц контроля касс</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Tables-->
+            <div class="oj-sm-12 oj-flex-item">
+              <div class="oj-hybrid-padding">
+                <table id="tableCashControl" summary="Department List" aria-label="Departments Table"
+                       data-bind="ojComponent: {component: 'ojTable',
+                                              data: datasource,
+                                              columnsDefault: {sortable: 'none'},
+                                              columns: columnsTable,
+                                              rootAttributes: {'style':'max-width: calc(100vw - 130px); height: calc(100vh - 30rem);'}}">
+                </table>
+              </div>
+            </div>
+            <!-- ko if: selectedTable -->
+            <div class="oj-sm-12 oj-flex-item">
+              <div class="oj-hybrid-padding">
+                <div><span>Таблица контроля касс № </span><span data-bind="text: selectedTable"></span></div>
+              </div>
+            </div>
+            <div class="oj-sm-12 oj-flex-item">
+              <div class="oj-hybrid-padding">
+                <table id="tableCashControl2" summary="Department List" aria-label="Departments Table"
+                       data-bind="ojComponent: {component: 'ojTable',
+                                              data: datasource2,
+                                              columnsDefault: {sortable: 'none'},
+                                              columns: columnsTable2,
+                                              rootAttributes: {'style':'max-width: calc(100vw - 130px); height: calc(100vh - 30rem);'}}">
+                </table>
+              </div>
+            </div>
+            <!-- /ko -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

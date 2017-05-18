@@ -1,0 +1,73 @@
+button {
+
+  &.button-icon {
+    .oj-button-text {
+      padding: 0 0.43rem !important;
+    }
+  }
+
+  &.btn-circle {
+    width: $circleButtonDiameter;
+    height: $circleButtonDiameter;
+    border-color: $buttonBorderColor;
+    border-radius: $largeBorderRadius;
+    cursor: pointer;
+
+    &.btn-select-app {
+      margin-right: 30px;
+    }
+  }
+  &.btn-select-app {
+    div {
+      span {
+        padding: 0 !important;
+      }
+    }
+    i {
+      padding: 16px 15px;
+      font-size: 22px;
+    }
+  }
+}
+
+.btn-select-app-container {
+  width: $circleButtonDiameter;
+  height: $circleButtonDiameter;
+  margin: $circleHeaderButtonVerticalMargin 0 $circleHeaderButtonVerticalMargin 20px;
+}
+
+.btn-container {
+  &.btn-dropdown {
+    position: absolute;
+    top: 19px;
+    right: -$circleButtonDiameter / 2;
+    height: $circleButtonDiameter;
+    overflow: hidden;
+    border: solid $dropdownBorderColor 2px;
+    background-color: $dropdownBgColor;
+    border-radius: 32px;
+    // Animation
+    -webkit-transition: height .7s;
+    -moz-transition: height .7s;
+    -ms-transition: height .7s;
+    -o-transition: height .7s;
+    transition: height .7s;
+    &.hover {
+      height: ($circleButtonDiameter + 4) * 3 - 4;
+      // Animation
+      -webkit-transition: height .3s;
+      -moz-transition: height .3s;
+      -ms-transition: height .3s;
+      -o-transition: height .3s;
+      transition: height .3s;
+    }
+  }
+}
+
+@media all and (max-width: 767px) {
+
+  .btn-select-app-container {
+    display: none;
+  }
+
+}

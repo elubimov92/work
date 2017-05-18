@@ -1,0 +1,22 @@
+<div class="dropdown__top">
+  <div class="avatar-container">
+    <a href=""><div class="avatar-placeholder" data-bind="text: user.name().charAt(0)"></div><!--Todo: user avatar here--></a>
+  </div>
+  <div class="name-container">
+    <div class="dropdown__name row row-first" data-bind="text: user.name"></div>
+    <div class="dropdown__name row row-second" data-bind="text: user.name"></div>
+  </div>
+  <div class="dropdown__after-name"></div>
+  <div class="email-container">
+    <button class="dropdown__email" data-bind="ojComponent: {component:'ojButton', label: user.email}">
+    </button>
+  </div>
+</div>
+<div class="dropdown__bottom">
+  <div id="dropdown-tabs" class="dropdown__tabs" data-bind="ojComponent:{component: 'ojTabs'}">
+    <ul>
+      <li><span>My account</span></li>
+      <li data-bind="click: logout"><span>Exit</span></li>
+    </ul>
+  </div>
+</div>

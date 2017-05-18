@@ -1,0 +1,35 @@
+<div class="oj-hybrid-padding" style="min-width: 310px">
+  <div class="oj-panel">
+    <!--<input id="inputSearch" placeholder="Search..." data-bind="ojComponent: {
+      component: 'ojInputSearch', value: search, rootAttributes: { style: 'max-width:100%' }}">-->
+    <div data-bind="ojComponent:{
+                              component: 'ojNavigationList',
+                              drillMode: 'collapsible',
+                              optionChange: rootData.navChangeHandler,
+                              selection: rootData.routeName
+                            }">
+      <ul>
+        <li class="oj-md-hide" id="tasks">
+          <a href="#">Tasks</a>
+        </li>
+        <li id="reports">
+          <a href="#">Reports</a>
+          <ul>
+            <li id="storeReport">
+              <a href="#" >Comparative by store</a>
+            </li>
+            <li id="segmentReport">
+              <a href="#" >Comparative by segment</a>
+            </li>
+            <li id="bestOf">
+              <a href="#" >Best of</a>
+            </li>
+            <li id="keyIndicators">
+              <a href="#" >Key indicators</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

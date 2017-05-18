@@ -1,0 +1,252 @@
+// General
+//----------------------------------
+// - Default
+// -- Color
+$contrastTextColor: #fffeff;
+// -- Background
+// --- Color
+$contrastBgColor: #182933;
+$contrastBgColor2: #1d2f3b;
+$interaction1Color: rgba(237, 28, 36, 1) !default;
+// -- Height
+$formControlInputHeight: 3.286rem !default;
+// -- Padding
+// --- Horizontal
+$formControlPaddingHorizontal: 1.072rem !default;
+// --- Icons
+$inputSearchIconPadding: 0 $formControlPaddingHorizontal !default;
+
+// Accordion
+//----------------------------------
+$accordionHeaderBgColor: #ed1c24;
+
+// App layout
+//----------------------------------
+$appLayoutMaxWidth: none;
+
+// Body
+$bodyBgImage: none !default;
+$bodyBgColor: #eff2f7 !default;
+
+// Border-radius
+//----------------------------------
+$mediumBorderRadius: 4px !default;
+$largeBorderRadius: 50% !default;
+
+// Button
+//----------------------------------
+// - Default
+// -- Height
+$buttonXlargeHeight: $formControlInputHeight;
+// -- Color
+$buttonTextColor: #fff !default;
+$buttonHalfChromeTextColor: #a5abb8 !default;
+$buttonHalfChromeTextColorSelected: #fff !default;
+// -- Background
+// --- Color
+$buttonBgColor: rgba(237, 28, 36, 1) !default;
+// --- Image
+$buttonBgImage: none !default;
+// -- Border
+// --- Color
+$buttonBorderColor: rgba(237, 28, 36, 1) !default;
+// -- Cursor
+$buttonCursor: pointer !default;
+// -- Shadow
+$buttonBoxShadow: 0px 15px 35px 0px rgba(237, 28, 36, 0.35);
+// - Hover
+// -- Color
+$buttonTextColorHover: #f1bec0 !default;
+// -- Border
+// --- Color
+$buttonBorderColorHover: #f1bec0 !default;
+
+// Button - circle
+//----------------------------------
+// - Default
+// -- Width
+$circleButtonDiameter: 54px;
+// -- Margin
+// --- Vertical
+$circleHeaderButtonVerticalMargin: 5px;
+
+// Button - outlined
+//----------------------------------
+// - Default
+// -- Color
+$buttonOutlinedChromeTextColor: #252525;
+// -- Border
+// --- Color
+$buttonOutlinedChromeBorderColor: transparent;
+// - Hover
+// -- Background
+// --- Color
+$buttonOutlinedChromeBgColorHover: #fff !default;
+// - Selected
+// -- Background
+// --- Color
+$buttonOutlinedChromeBgColorActive: #fff !default;
+// -- Border
+// --- Color
+$buttonOutlinedChromeBorderColorActive: #fff !default;
+
+// Calendar
+$calendarPopupBgColor: $contrastBgColor;
+$calendarPopupHeaderBgColor: $contrastBgColor2;
+
+// Dropdown
+//----------------------------------
+// - Default
+// -- Color
+$dropdownTextColor: rgba(25, 41, 51, 1);
+// -- Background
+// --- Color
+$dropdownBgColor: #fff;
+// -- Border
+// --- Color
+$dropdownBorderColor: #eaeaea;
+// -- Font
+// --- Size
+$dropdownFontSizeFirst: 18px;
+$dropdownFontSizeSecond: 15px;
+// -- Animation
+$dropdownAnimationDuration: .3s;
+// -- Other
+$dropdownTabHeight: 62px;
+
+// Dropdown select app
+//----------------------------------
+// - Default
+// -- Width
+$dropdownSelectAppWidth: 380px;
+// -- Height
+$dropdownSelectAppHeight: 173px;
+
+// Dropdown user info
+//----------------------------------
+// - Default
+// -- Width
+$dropdownUserInfoWidth: 465px;
+// -- Height
+$dropdownUserInfoHeight: 227px;
+// -- Other
+$dropdownUserInfoResponsiveTopOffset: 100px;
+
+// Icon
+//----------------------------------
+// - Default
+// -- Color
+$buttonIconColor: #fff !default;
+// -- Paths
+$iconSettingsPath: 'images/settings.png';
+$iconSettingsHoverPath: 'images/settings_hover.png';
+$iconBranchPath: 'images/stat_info_16.png';
+$iconHomePath: 'images/stat_info_16.png';
+$iconClockPath: 'images/stat_info_16.png';
+$iconSocialPath: 'images/stat_info_16.png';
+$iconMorePath: 'images/stat_info_16.png';
+// - Hover
+$iconColorHover: #f1bec0 !default;
+
+// Input
+//----------------------------------
+$inputTextColor: #676b73;
+$inputBgColor: rgba(246, 249, 252, 1);
+
+// Images
+//----------------------------------
+$circleAvatarImageDiameter: 54px;
+
+// Header
+//----------------------------------
+$headerHeight: 65px;
+$appLayoutWebHeaderBoxShadow: 0 1px 3px #ecedf2;
+
+// Font
+//----------------------------------
+$fontSize: 0.95rem !default;
+
+// Link
+//----------------------------------
+$linkTextColor: #ed1c24 !default;
+
+// Listbox
+//----------------------------------
+// - Default
+// -- Color
+$listboxItemLabelColorDefault: $contrastTextColor;
+// -- Background
+// --- Color
+$listboxBgColor: $contrastBgColor;
+// - Focus
+// -- Background
+// --- Color
+$listboxBgColorFocus: $contrastBgColor2;
+
+// Navigation bar
+//----------------------------------
+$navigationBarItemLabelColorDefault: #a5abb8 !default;
+
+// Navigation list
+//----------------------------------
+// - Default
+// -- Font
+$navigationListFontSize: $fontSize;
+// - Default
+// -- Color
+$navigationListItemLabelColorDefault: #a5abb8 !default;
+// - Hover
+// -- Backgound
+// --- Color
+$navigationListItemBgColorHover: #ed1c24 !default;
+// - Selected
+// -- Color
+$navigationListItemLabelColorSelected: $interaction1Color !default;
+// -- Background
+// --- Color
+$navigationListItemBgColorSelected: #fff !default;
+
+
+// Navigation list - collapsible
+//----------------------------------
+// - Default
+// -- Color
+$navigationListCollapsibleIconColorDefault: #fff !default;
+// -- Animation
+$collapsibleAnimationDuration: 0s !default;
+
+// Navigation list - contrast
+//----------------------------------
+// - Default
+// -- Color
+$navigationListItemContrastLabelColorDefault: #a5abb8 !default;
+// -- Background
+// --- Color
+$contrastBackground1Color: rgb(250, 252, 255) !default;
+// - Hover
+// -- Color
+$navigationListItemContrastLabelColorHover: #f1bec0 !default;
+// -- Background
+// --- Color
+$navigationListItemContrastBgColorHover: rgb(250, 252, 255) !default;
+// - Selected
+// -- Color
+$navigationListItemContrastLabelColorSelected: $interaction1Color !default;
+// -- Background
+// --- Color
+$navigationListItemContrastBgColorSelected: rgb(250, 252, 255) !default;
+
+// Overlay
+$overlayBgColor: transparent;
+
+// Panels
+//----------------------------------
+$panelBorderColor: #ffffff !default;
+$panel1BgColor: $bodyBgColor !default;
+$panel1BorderColor: $bodyBgColor !default;
+$panelBorderRadius: $mediumBorderRadius !default;
+
+// Other
+//----------------------------------
+$background4Color: #fafcff !default;
+$avatarPlaceholderFontSize: 32px;

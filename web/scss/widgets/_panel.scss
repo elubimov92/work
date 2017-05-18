@@ -1,0 +1,6 @@
+#topPanel {
+  &.oj-panel {
+    box-shadow: $largeBoxShadow;
+    z-index: 100;
+  }
+}

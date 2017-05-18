@@ -1,0 +1,136 @@
+@import "../variables";
+
+// Calendar external - panel
+#calendar {
+
+  .oj-tabs-title {
+    text-transform: capitalize;
+  }
+  .oj-tabs-panel {
+    background-color: $buttonBgColor;
+  }
+  // Circle buttons
+  .num-day {
+    display: inline-block;
+    vertical-align: middle;
+    background: rgba(0, 0, 0, .1);
+    margin: 0 -3%;
+    padding: 2px 13px;
+    font-size: 20px;
+    line-height: 34px;
+  }
+  .oj-button-text-only {
+
+    .oj-button-text {
+      padding: 0;
+    }
+  }
+  // Month and year label on right side of the circle button
+  .month-year {
+    color: $buttonTextColor;
+    text-transform: uppercase;
+  }
+  .btn-calendar-img {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .1);
+
+    .oj-fwk-icon {
+      font-size: 2.4rem;
+    }
+  }
+  // Only for month/year tab
+  #tabs-3, #tabs-4 {
+
+    .month-content, .year-content {
+      text-align: center;
+
+      .num-day {
+        width: auto;
+        border-radius: 23px;
+      }
+    }
+  }
+}
+
+// Calendar internal - popup
+#calendarPopup_wrapper {
+  background-color: $calendarPopupBgColor;
+}
+
+#calendarPopup {
+  width: 22rem;
+  max-width: 300px;
+  text-align: center;
+
+  .calendar-header {
+
+    .month, .year {
+      color: $contrastTextColor;
+      text-transform: uppercase;
+    }
+  }
+  // General table styles
+  .table {
+    div {
+      display: inline-block;
+      position: relative;
+      box-sizing: border-box;
+      color: $contrastTextColor;
+      cursor: pointer;
+      margin: 2px 0 3px;
+
+      &.selected {
+        border-radius: $largeBorderRadius;
+        background-color: $interaction1Color;
+      }
+    }
+  }
+  // Only for day and week calendars
+  .table-days {
+    div {
+      line-height: 24px;
+      padding: 6px 2px;
+      min-width: 13%;
+
+      &.disabled {
+        color: #8a8a8a;
+      }
+      &.selected-middle {
+        border-radius: 0;
+        margin: 8px 0;
+        padding: 0;
+        padding-bottom: 1px;
+      }
+      &.selected-first, &.selected-middle {
+        // Line after each selected block (except last)
+        &:after {
+          position: absolute;
+          content: '';
+          width: 15px;
+          height: 25px;
+          right: -9px;
+          background-color: $interaction1Color;
+        }
+      }
+      &.selected-first, &.selected-last {
+        padding: 6px 0;
+        border-radius: $largeBorderRadius;
+      }
+    }
+  }
+  // Only for month calendar
+  .table-months {
+    div {
+      min-width: 23%;
+      padding: 23px 2px;
+    }
+  }
+  // Only for year calendar
+  .table-years {
+    div {
+      min-width: 25%;
+      padding: 25px 2px;
+    }
+  }
+}

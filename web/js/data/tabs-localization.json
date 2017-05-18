@@ -1,0 +1,27 @@
+{
+  "main": {
+    "ru": "Главная",
+    "fr": "Main",
+    "en": "Main"
+  },
+  "marginCheck": {
+    "ru": "Проверка маржи",
+    "fr": "Vérification de la marge",
+    "en": "Margin check"
+  },
+  "store": {
+    "ru": "Магазин",
+    "fr": "Store",
+    "en": "Store"
+  },
+  "accro": {
+    "ru": "Аккрошаж",
+    "fr": "Accro",
+    "en": "Accro"
+  },
+  "about": {
+    "ru": "О приложении",
+    "fr": "Sur",
+    "en": "About"
+  }
+}
